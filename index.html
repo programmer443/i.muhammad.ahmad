@@ -8,300 +8,416 @@
     <title> MAM - Personal Portfolio Website </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-   
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SPXJ4WKZ2"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-4SPXJ4WKZ2');
+        gtag('config', 'G-4SPXJ4WKZ2');
     </script>
 
 </head>
 
 <body>
-    
-<!-- Navbar  Section Start -->
-<header>
-    <a href="#" class="logo">Muhammad <span> Ahmad</span>.</a>
 
-    <div class="bx bx-menu" id="menu-icon"></div>
+    <!-- Navbar  Section Start -->
+    <header>
+        <a href="#" class="logo">Muhammad <span> Ahmad</span>.</a>
 
-    <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#services">Experience</a></li>
-         <li><a href="#education">Education</a></li>
-         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <div class="bx bx-moon" id="darkmode"></div>
-    </ul>
-</header>
-<!-- Navbar Section End -->
-    
-<!-- Home Section Start -->
-<section class="home" id="home">
-    <div class="social">
-        <a href="https://github.com/programmer443" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://medium.com/@muhammadahmaddeveloper" target="_blank"><i class='bx bxl-medium'></i></a>
-        <a href="https://www.linkedin.com/in/muhammadahmaddeveloper/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-    </div>
-    <div class="home-img">
-        <img src="./main.png" alt="">
-    </div>
-    <div class="home-text">
-        <span>Hello, I'm</span>
-        <h1>Muhammad Ahmad</h1>
-        <h2>iOS Developer</h2>
-        <p>I'm passionated iOS Developer <br> also I have keen interest in React Native, Full Stack <br> </p>
-        <a href="https://drive.google.com/file/d/15jlmvB6RBGdCXSVL7ZI0iLiuPgYl0YxD/view?usp=sharing" class="btn">Download CV</a>
-    </div>
-</section>
-<!-- Home Section End -->
-    
-<!-- About Section Start -->
-<section class="about" id="about">
-    <div class="heading">
-        <h2>About Me</h2>
-        <span>Introduction</span>
-    </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
 
-    <div class="about-container">
-        <div class="about-img">
-            <img src="./main.png" alt="">
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    <!-- Navbar Section End -->
+
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+        <div class="social">
+            <a href="https://github.com/programmer443" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://medium.com/@muhammadahmaddeveloper" target="_blank"><i class='bx bxl-medium'></i></a>
+            <a href="https://www.linkedin.com/in/muhammadahmaddeveloper/" target="_blank"><i
+                    class='bx bxl-linkedin'></i></a>
         </div>
-        <div class="about-text">
-            <p>I graduated as a Computer Engineer from the National University of Science & Technology, Islamabad, and currently, I'm working at Netsol Technology as an iOS Developer. I have developed and maintained iOS applications using Swift, Xcode, SwiftUI, and Cocoa Touch. I also have a keen interest in Full Stack Development and have experience in this domain.</p>
-            <div class="information">
-                <div class="info-box">
-                    <i class='bx bxs-user'></i>
-                    <span>Muhammad Ahmad</span>
+        <div class="home-img">
+            <img src="/main.png" alt="">
+        </div>
+        <div class="home-text">
+            <span>Hello, I'm</span>
+            <h1>Muhammad Ahmad</h1>
+            <h2>Mobile Developer</h2>
+            <p>I am a passionate Mobile Developer with expertise in both native and hybrid applications. My work spans
+                across iOS development with Swift and SwiftUI, as well as cross-platform solutions using React Native.
+            </p>
+            <a href="https://drive.google.com/file/d/1ssF4M9DoMrMFPPgZDaweLEucVjztML4l/view?usp=sharing"
+                class="btn">Download CV</a>
+        </div>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+
+        <div class="about-container">
+            <div class="about-img">
+                <img src="/main.png" alt="">
+            </div>
+            <div class="about-text">
+                <p>I graduated as a Computer Engineer from the National University of Science & Technology, Islamabad,
+                    and currently, I'm working at Netsol Technology as an iOS Developer. I have developed and maintained
+                    iOS applications using Swift, Xcode, SwiftUI, and Cocoa Touch. I also have a keen interest in Full
+                    Stack Development and have experience in this domain.</p>
+                <div class="information">
+                    <div class="info-box">
+                        <i class='bx bxs-user'></i>
+                        <span>Muhammad Ahmad</span>
+                    </div>
+
+                    <div class="info-box">
+                        <i class='bx bxs-phone'></i>
+                        <span>+92 3704458098</span>
+                    </div>
+
+                    <div class="info-box">
+                        <i class='bx bxs-envelope'></i>
+                        <span>i.muhammad.ahmad443@gmail.com</span>
+                    </div>
+                </div>
+                <a href="https://drive.google.com/file/d/1ssF4M9DoMrMFPPgZDaweLEucVjztML4l/view?usp=sharing"
+                    class="btn">Download CV</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Skills Section Start -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <span>My Skills</span>
+        </div>
+
+        <div class="skills-container">
+            <div class="bars">
+
+                <div class="bars-box">
+                    <h3>SwiftUI</h3>
+                    <span>90%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
                 </div>
 
-                <div class="info-box">
-                    <i class='bx bxs-phone'></i>
-                    <span>+92 3177252186</span>
+                <div class="bars-box">
+                    <h3>Swift</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
                 </div>
 
-                <div class="info-box">
-                    <i class='bx bxs-envelope'></i>
-                    <span>i.muhammad.ahmad443@gmail.com</span>
+                <div class="bars-box">
+                    <h3>UIKit</h3>
+                    <span>63%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>REST APIs</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>GitHub & Git</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>React</h3>
+                    <span>84%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>Javascript</h3>
+                    <span>63%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>HTML&CSS</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
                 </div>
             </div>
-            <a href="https://drive.google.com/file/d/15jlmvB6RBGdCXSVL7ZI0iLiuPgYl0YxD/view?usp=sharing" class="btn">Download CV</a>
-        </div>
-    </div>
-</section>
-<!-- About Section End -->
-
-<!-- Skills Section Start -->
-<section class="skills" id="skills">
-    <div class="heading">
-        <h2>Skills</h2>
-        <span>My Skills</span>
-    </div>
-
-    <div class="skills-container">
-        <div class="bars">
-
-            <div class="bars-box">
-                <h3>SwiftUI</h3>
-                <span>90%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar html-bar"></div>
-            </div>
-
-            <div class="bars-box">
-                <h3>Swift</h3>
-                <span>80%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar css-bar"></div>
-            </div>
-
-            <div class="bars-box">
-                <h3>UIKit</h3>
-                <span>63%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar js-bar"></div>
-            </div>
-               <div class="bars-box">
-                <h3>REST APIs</h3>
-                <span>80%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar css-bar"></div>
-            </div>
-   <div class="bars-box">
-                <h3>GitHub & Git</h3>
-                <span>80%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar css-bar"></div>
-            </div>
-
-            <div class="bars-box">
-                <h3>React</h3>
-                <span>84%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar react-bar"></div>
-            </div>
-               <div class="bars-box">
-                <h3>Javascript</h3>
-                <span>63%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar js-bar"></div>
-            </div>
-               <div class="bars-box">
-                <h3>HTML&CSS</h3>
-                <span>80%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar css-bar"></div>
+            <div class="skills-img">
+                <img src="/main.png" alt="Skill">
             </div>
         </div>
-        <div class="skills-img">
-            <img src="./main.png" alt="Skill">
+    </section>
+    <!-- Skills Section End -->
+
+    <!-- Experience Section Start -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>Experience</h2>
+            <span>My Experience</span>
         </div>
-    </div>
-</section>
-<!-- Skills Section End -->
-    
-<!-- Experience Section Start -->
-<section class="services" id="services">
-    <div class="heading">
-        <h2>Experience</h2>
-        <span>My Experience</span>
-    </div>
-    <div class="services-content">
+        <div class="services-content">
 
-        <div class="services-box experience">
-            <i class='bx bx-code-alt'></i>
-            <h3>iOS Developer</h3>
-            <span>Netsol Technology</span><br><span>Jul. 2022 - Present</span><br>
-            <a href="#">Learn More</a>
+            <div class="services-box experience">
+                <i class='bx bx-code-alt'></i>
+                <h3>Software Engineer</h3>
+                <span>Netsol Technology</span><br><span>Jul. 2022 - Present</span><br>
+                <p>Developed and maintained Mobile applications, focusing on user experience and performance. Worked
+                    with Swift, SwiftUI, Java and third-party APIs to create robust and scalable applications.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Full Stack Developer</h3>
+                <span>Natural Fare, Freelance</span><br><span>Nov. 2021 - Jun. 2022</span><br>
+                <p>Worked on both frontend and backend development for web and mobile applications. Used React for
+                    frontend and Node.js for backend, integrating RESTful APIs and ensuring seamless user experiences.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-award'></i>
+                <h3>Backend Django</h3>
+                <span>Netpower AS, Freelance</span><br><span>Mar. 2021 - Jun. 2021</span><br>
+                <p>Contributed to backend development using Django, focusing on API development and database management
+                    to support scalable and efficient web applications.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-award'></i>
+                <h3>Wordpress Developer</h3>
+                <span>Elines LLC, Freelance</span><br><span>Dec. 2020 - Mar. 2021</span><br>
+                <a href="https://elinesllc.com/">Live Link</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Experience Section End -->
+
+    <!-- Education Section Start -->
+    <section class="education" id="education">
+        <div class="heading">
+            <h2>Education</h2>
+            <span>My Education</span>
+        </div>
+        <div class="services-content">
+            <div class="services-box education">
+                <i class='bx bx-code'></i>
+                <h3>Bachelor Science (BS)</h3>
+                <span>Computer Engineering</span><br>
+
+                <span>National University of Science & Technology, Islamabad</span><br>
+                <span>Year: 2018-2022</span><br>
+                <span>CGPA: 3.25</span><br>
+                <a href="#contact">Learn More</a>
+            </div>
+            <div class="services-box education">
+                <i class='bx bx-math'></i>
+                <h3>Faculty of Science (FSc)</h3>
+                <span>Pre-Engineering</span><br>
+                <span>Punjab College Of Science,<br> Gujranwala</span><br>
+                <span>Year: 2016-2018</span><br>
+                <span>Percent: 87%</span><br>
+                <a href="#contact">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section Start -->
+    <section class="education" id="education">
+        <div class="heading">
+            <h2>Projects</h2>
+            <span>Showcase of My Work</span>
         </div>
 
-        <div class="services-box">
-            <i class='bx bx-code-alt'></i>
-            <h3>Full Stack Developer</h3>
-             <span>Natural Fare</span><br><span>Mar. 2022 - Jun. 2022</span><br>
-            <a href="#">Learn More</a>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Project Card 1 -->
+                <div class="services-box swiper-slide">
+                    <div class="media-container">
+                        <a href="https://drive.google.com/file/d/1Qjkye6FKICzkFWnoZiWfJH4YCXBh9XP1/view?usp=drive_link"
+                            target="_blank">
+                            <img src="https://i.postimg.cc/65yzRxRt/viewconnect.png" alt="ViewConnect App"
+                                class="project-image">
+                        </a>
+                    </div>
+                    <h3>ViewConnect</h3><br>
+                    <p>A cutting-edge iOS flight tracking app built with SwiftUI, leveraging ARKit, Mapbox, and 3D
+                        models
+                        for real-time, immersive flight tracking experiences.</p>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="services-box swiper-slide">
+                    <div class="media-container">
+                        <a href="https://example.com/mpost-video.mp4" target="_blank">
+                            <img src="https://i.postimg.cc/mkxX2dX7/mPos.png" alt="mPOS App" class="project-image">
+                        </a>
+                    </div>
+                    <h3>mPOS</h3><br>
+                    <p>An advanced point-of-sale finance application for iOS, crafted using UIKit and Storyboard,
+                        offering a
+                        seamless and intuitive user experience.</p>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="services-box swiper-slide">
+                    <div class="media-container">
+                        <a href="https://example.com/mdaas-video.mp4" target="_blank">
+                            <img src="https://i.postimg.cc/J0JFNwDT/mDaas.png" alt="mDAAS App" class="project-image">
+                        </a>
+                    </div>
+                    <h3>mDAAS</h3><br>
+                    <p>An innovative finance point-of-sale app for Android, using Java and SignalR for real-time
+                        notifications, Google ML Kit for text recognition, and robust file handling capabilities.</p>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="services-box swiper-slide">
+                    <div class="media-container">
+                        <a href="https://play.google.com/store/apps/details?id=com.nfs.digital.and.kpk&hl=en"
+                            target="_blank">
+                            <img src="https://play-lh.googleusercontent.com/3TaGfP5VsDBW-6U2-HxQHcaQZfnY4Vvc20UKFFRPWJ4Nee0PyMA0HvGhK6HSDP5Cy4Uh"
+                                alt="KP Digital Workspace App" class="project-image">
+                        </a>
+                    </div>
+                    <h3>KP Digital Workspace</h3><br>
+                    <p>A comprehensive government application for the KPK assembly, built with SwiftUI. Features include
+                        encrypted communication, SignalR integration, and advanced file handling.</p>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="services-box swiper-slide">
+                    <div class="media-container">
+                        <a href="https://drive.google.com/file/d/1oqYB6zij_T7EcLGjoq4FAvtxyWQJj5N-/view?usp=drive_link"
+                            target="_blank">
+                            <img src="https://upamaterials.com/wp-content/uploads/2023/10/AdjusterPortal.png"
+                                alt="iClaim App" class="project-image">
+                        </a>
+                    </div>
+                    <h3>iClaim</h3><br>
+                    <p>A powerful claim management application built with Flutter, utilizing GetX for state management,
+                        Firebase for backend services, and supporting features like real-time notifications, image
+                        upload,
+                        and secure user authentication.</p>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="services-box swiper-slide">
+                    <div class="media-container">
+                        <a href="https://drive.google.com/file/d/15x--1GM_mo_G78N2xJFSNhmLCcWuvvSf/view?usp=drive_link"
+                            target="_blank">
+                            <img src="https://i.postimg.cc/MTHf4qzG/eshpy.jpg" alt="eshpy App" class="project-image">
+                        </a>
+                    </div>
+                    <h3>eshpy</h3><br>
+                    <p>A React Native-based shopping application, designed with an emphasis on simplicity and ease of
+                        use,
+                        offering a seamless user experience across platforms.</p>
+
+                </div>
+
+                <!-- Project Card 7 -->
+                <div class="services-box swiper-slide">
+                    <div class="media-container">
+                        <a href="https://es-gt.wordpress.org/plugins/bazoom-article-publisher/" target="_blank">
+                            <img src="https://bazoom.com/wp-content/uploads/2024/06/marketplace-3.webp"
+                                alt="Article Publisher Plugin" class="project-image">
+                        </a>
+                    </div>
+                    <h3>Article Publisher</h3><br>
+                    <p>A powerful WordPress plugin designed to streamline the process of publishing articles, enhancing
+                        SEO
+                        and web rankings for content creators and marketers.</p>
+                </div>
+
+                <!-- Project Card 8 -->
+                <div class="services-box swiper-slide">
+                    <div class="media-container">
+                        <a href="https://streamingly.net/" target="_blank">
+                            <img src="https://i.postimg.cc/43Dn8t2W/streamingly.png" alt="Streamingly Platform"
+                                class="project-image">
+                        </a>
+                    </div>
+                    <h3>Streamingly</h3><br>
+                    <p>A dynamic startup venture offering a robust video streaming platform, built with the latest web
+                        technologies to deliver high-quality, on-demand content.</p>
+                </div>
+            </div>
         </div>
-    <div class="services-box">
-            <i class='bx bx-award'></i>
-            <h3>WordPress Developer</h3>
-          <span>ELines UK</span><br><span>Jan. 2021 - Jun. 2021</span><br>
-            <a href="#">Learn More</a>
+    </section>
+
+    <!-- Projects Section End -->
+
+    <!-- Contact Section Start -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Connect me</span>
+        </div>
+        <div class="contact-form">
+            <form action="mailto:i.muhammad.ahmad443@gmail.com" name="contact" method="POST" data-netlify="true"
+                enctype="text/plain">
+                <input type="hidden" name="form-name" value="contact">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                <input type="submit" value="Send Message" class="contact-button">
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Contact Section End -->
+
+    <div class="footer">
+        <h2>Follow Me</h2>
+        <div class="footer-social">
+            <a href="https://github.com/programmer443" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://medium.com/@muhammadahmaddeveloper" target="_blank"><i class='bx bxl-medium'></i></a>
+            <a href="https://www.linkedin.com/in/muhammadahmaddeveloper/" target="_blank"><i
+                    class='bx bxl-linkedin'></i></a>
         </div>
 
     </div>
-</section>
-<!-- Experience Section End -->
-   
-<!-- Education Section Start -->
-<section class="education" id="education">
-    <div class="heading">
-        <h2>Education</h2>
-        <span>My Education</span>
+
+    <div class="copyright">
+        &#169; MAM| All Right Reserved.</p>
     </div>
-  <div class="services-content">
-     <div class="services-box education">
-           <i class='bx bx-code'></i>
-           <h3>Bachelor Science (BS)</h3>
-           <span>Computer Engineering</span><br>
-
-           <span>National University of Science & Technology, Islamabad</span><br>
-           <span>Year: 2018-2022</span><br>
-           <span>CGPA: 3.25</span><br>
-           <a href="#contact">Learn More</a>
-      </div>
-      <div class="services-box education">
-           <i class='bx bx-math'></i>
-           <h3>Faculty of Science (FSc)</h3>
-           <span>Pre-Engineering</span><br>
-           <span>Punjab College Of Science,<br> Gujranwala</span><br>
-           <span>Year: 2016-2018</span><br>
-           <span>Percent: 87%</span><br>
-           <a href="#contact">Learn More</a>
-      </div>
-    </div>
-</section>
-<!-- Profession Projects Section End -->
-<!-- Envolvement Section Start -->
-<!-- <section class="projects" id="projects">
-    <div class="heading">
-        <h2>Profession Projects</h2>
-        <span>My Projects</span>
-    </div>
-  <div class="services-content">
-     <div class="services-box education">
-           <i class="bx bx-user-check"></i>
-           <img class="bx" src="/kzoo_icon.png">
-           <h3>KZOO</h3><br>
-           <img class="bx" src="/kzoo_main.png" height="500px" width="250px">
-           <span>iOS App in SwiftUI</span><br>
-           <a href="#contact">Learn More</a>
-     </div>
-
-     <div class="services-box education">
-           <i class='bx bx-group'></i>
-           <h3>Overall Coordinator</h3>
-           <span>E-Cell BKBIET</span><br>
-           <span>November 2022 - April 2023</span>
-           <a href="#contact">Learn More</a>
-     </div>
-        
-     <div class="services-box education">
-           <i class='bx bx-group'></i>
-           <h3>Placement Coordinator</h3>
-           <span>Placement-Cell BKBIET</span><br>
-           <span>December 2021 - Present</span>
-           <a href="#contact">Learn More</a>
-     </div>
-  </div>
- </section> -->
-
-
-<!-- Contact Section Start -->
-<section class="contact" id="contact">
-    <div class="heading">
-        <h2>Contact</h2>
-        <span>Connect me</span>
-    </div>
-    <div class="contact-form">
-        <form name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
-            <input type="submit" value="Send" class="contact-button">
-        </form>
-    </div>
-</section>
-
-
-<!-- Contact Section End -->
-
-<div class="footer">
-    <h2>Follow Me</h2>
-    <div class="footer-social">
-        <a href="https://github.com/programmer443" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://medium.com/@muhammadahmaddeveloper" target="_blank"><i class='bx bxl-medium'></i></a>
-        <a href="https://www.linkedin.com/in/muhammadahmaddeveloper/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-    </div>
-
-</div>
-
-<div class="copyright">
-    &#169; MAM| All Right Reserved.</p>
-</div>
-
-
-
-
     <!-- Javascript -->
     <script src="script.js"></script>
 </body>
 
 </html>
-

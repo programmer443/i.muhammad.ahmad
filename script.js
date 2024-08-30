@@ -27,18 +27,37 @@ darkmode.onclick = () => {
 };
 
 const form = document.querySelector('form[name="contact"]');
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const formData = new FormData(form);
-        fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(formData).toString()
-        }).then(() => {
-            const successMessage = document.createElement('p');
-            successMessage.textContent = 'Thank you for your message!';
-            form.parentNode.replaceChild(successMessage, form);
-        }).catch((error) => {
-            console.error(error);
-        });
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => {
+      const successMessage = document.createElement("p");
+      successMessage.textContent = "Thank you for your message!";
+      form.parentNode.replaceChild(successMessage, form);
+    })
+    .catch((error) => {
+      console.error(error);
     });
+});
+
+var swiper = new Swiper(".swiper-container", {
+  slidesPerView: 3,
+  spaceBetween: 6,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

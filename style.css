@@ -12,14 +12,14 @@
  }
 
  :root {
-  --main-color: #033a80;
-  --bg-color: #fff;
-  --text-color: #0f0c27;
-  --hover: #1B9C85;
-  --big-font: 3.2rem;
-  --medium-font: 1.8rem;
-  --p-font: 0.941rem;
-}
+   --main-color: #033a80;
+   --bg-color: #fff;
+   --text-color: #0f0c27;
+   --hover: #1B9C85;
+   --big-font: 3.2rem;
+   --medium-font: 1.8rem;
+   --p-font: 0.941rem;
+ }
 
  section {
    padding: 50px 10%;
@@ -295,7 +295,7 @@
    align-items: center;
    text-align: center;
    border-radius: 0.5rem;
-   border-bottom: 2px solid var(--main-color); 
+   border-bottom: 2px solid var(--main-color);
    box-shadow: 0 3px 8px #5c469ca1;
  }
 
@@ -419,6 +419,66 @@
    color: #22cf91;
  }
 
+ .swiper-container {
+   width: 100%;
+   padding-bottom: 50px;
+   padding-top: 50px;
+   overflow-x: hidden;
+ }
+
+ .swiper-wrapper {
+   display: flex;
+   width: 35% !important;
+ }
+
+ .swiper-slide {
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   margin: 0 15px;
+ }
+
+ .project-image {
+   width: 100%;
+   height: auto;
+   transition: transform 0.3s ease;
+ }
+
+
+ .media-container {
+   position: relative;
+   height: 200px;
+   width: 100%;
+   overflow: hidden;
+   margin-bottom: 10px;
+ }
+
+ .media-container img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   min-width: 100%;
+   min-height: 100%;
+   object-fit: cover;
+ }
+
+ .swiper-button-next,
+ .swiper-button-prev {
+   color: #000;
+ }
+
+ .swiper-pagination {
+   text-align: center;
+   margin-top: 20px;
+ }
+
+ .swiper-pagination-bullet {
+   background: #000;
+ }
+
+
  /* For Mobile */
  @media (max-width: 991px) {
    header {
@@ -428,12 +488,18 @@
    section {
      padding: 50px 4%;
    }
+   .swiper-slide {
+    width: 100%;
+   }
  }
 
  @media (max-width: 881px) {
    :root {
      --big-font: 2.7rem;
      --medium-font: 1.4rem;
+   }
+   .swiper-slide {
+    width: 100% !important;
    }
  }
 
@@ -446,8 +512,9 @@
    header {
      padding: 11px 4%;
    }
+
    .about-text {
-    margin-right: 18px;
+     margin-right: 18px;
    }
 
    #menu-icon {
@@ -547,16 +614,18 @@
      font-size: 0.9rem;
      font-weight: 500;
    }
-   .education{
-  width: 350px;
-  padding-top: 5px;
-  
- }
-     .experience{
-  width: 350px;
-  padding-top: 5px;
-  
- }
+
+   .education {
+     width: 350px;
+     padding-top: 5px;
+
+   }
+
+   .experience {
+     width: 350px;
+     padding-top: 5px;
+
+   }
 
    .information .info-box span {
      font-size: 1rem;
